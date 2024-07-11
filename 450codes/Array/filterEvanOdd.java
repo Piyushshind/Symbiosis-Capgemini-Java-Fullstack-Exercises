@@ -19,6 +19,7 @@ public class filterEvanOdd {
         }
         for (int i = 0; i < 5; i++) {
             System.out.println(arr2[i]);
+        
         }
 
     }
