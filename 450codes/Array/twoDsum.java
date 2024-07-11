@@ -33,7 +33,7 @@ public class twoDsum {
         int diagonalSum = 0;
         for (int j = 0; j < col; j++) {
             int sumCol = 0;
-            for (int i = 0; i < row; i++) {1
+            for (int i = 0; i < row; i++) {
                 sumCol += numbers[i][j];
                 if (i == j) {
                     diagonalSum += numbers[j][i];
