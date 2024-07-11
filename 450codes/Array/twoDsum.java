@@ -30,13 +30,17 @@ public class twoDsum {
             }
             System.out.println("Sum of row " + (i + 1) + " is: " + sumRow);
         }
-
+        int diagonalSum = 0;
         for (int j = 0; j < col; j++) {
             int sumCol = 0;
-            for (int i = 0; i < row; i++) {
+            for (int i = 0; i < row; i++) {1
                 sumCol += numbers[i][j];
+                if (i == j) {
+                    diagonalSum += numbers[j][i];
+                }
             }
             System.out.println("Sum of column " + (j + 1) + " is: " + sumCol);
         }
+        System.out.println("Diagonal sum :- " + diagonalSum);
     }
 }
