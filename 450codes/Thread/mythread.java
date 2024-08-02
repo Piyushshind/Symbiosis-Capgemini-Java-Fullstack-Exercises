@@ -42,6 +42,7 @@ public class mythread {
         t1.setPriority(5);
         t2.setPriority(1);
         t3.setPriority(10);
+        
         t1.start();
         t2.start();
         t3.start();
