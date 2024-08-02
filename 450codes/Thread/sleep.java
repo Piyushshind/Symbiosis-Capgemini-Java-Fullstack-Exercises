@@ -12,6 +12,7 @@ public class sleep {
         mySleepThread obj = new mySleepThread();
         Thread T1 = new Thread(obj);
         Thread T2 = new Thread(obj);
+       
         T1.start();
 
         try {
