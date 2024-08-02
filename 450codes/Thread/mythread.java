@@ -1,8 +1,10 @@
 // package 450codes.Thread;
 class myTread implements Runnable {
+    public static int a = 0;
+
     public void run() {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(Thread.currentThread().getName() + " is running ...." + i + " times ");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(Thread.currentThread().getName() + " is running ...." + (++a) + " times ");
 
         }
     }
