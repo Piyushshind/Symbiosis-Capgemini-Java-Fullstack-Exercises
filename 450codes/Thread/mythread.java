@@ -3,25 +3,25 @@ class myTread implements Runnable {
     public int a = 0;
 
     public void run() {
-        for (int i = 0; i < 50; i++) {
+        for (int i = 1; i < 51; i++) {
             long id = Thread.currentThread().getId();
             String name = Thread.currentThread().getName();
             if (id == 21) {
                 if (i % 2 == 0) {
                     System.out
-                            .println(name + " t1 thread is running with id :- " + id + " and connt " + (++a) 
-                                    + "with Loop-index :- " + i);
+                            .println(name + " t1 thread is running with id :- " + id + " and connt " + (++a)
+                                    + "with Even Numbers :- " + i);
                 }
             }
             if (id == 22) {
                 if (i % 2 != 0) {
-                    System.out.println(name + " t2 thread is running with id :- " + id + " and connt " + (++a) + " Odd "
-                            + "with Loop-index :- " + i);
+                    System.out.println(name + " t2 thread is running with id :- " + id + " and connt " + (++a)
+                            + "with Odd Numbers :- " + i);
                 }
             }
             if (id == 23) {
-                System.out.println(name + " t3 thread is running with id :- " + id + " and connt " + (++a) + " Nutral"
-                        + " with Loop-index :- " + i);
+                System.out.println(name + " t3 thread is running with id :- " + id + " and connt " + (++a)
+                        + " with Natuaral Numbers :- " + i);
             }
         }
     }
