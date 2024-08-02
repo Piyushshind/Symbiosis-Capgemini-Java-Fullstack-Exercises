@@ -28,7 +28,6 @@ class myTread implements Runnable {
 }
 
 public class mythread {
-
     public static void main(String[] args) {
         myTread s1 = new myTread();
         Thread t1 = new Thread(s1);
@@ -42,7 +41,7 @@ public class mythread {
         t1.setPriority(5);
         t2.setPriority(1);
         t3.setPriority(10);
-        
+
         t1.start();
         t2.start();
         t3.start();
