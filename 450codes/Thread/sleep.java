@@ -19,6 +19,7 @@ public class sleep {
         } catch (Exception e) {
             System.out.println(e);
         }
+        System.out.println("3 seconds waiting .....");
         T2.start();
     }
 }
