@@ -1,11 +1,22 @@
 // package 450codes.Thread;
 class myTread implements Runnable {
-    public  int a = 0;
+    public int a = 0;
 
     public void run() {
         for (int i = 0; i < 5; i++) {
-            System.out.println("Thread " + Thread.currentThread().getId() + " is running ...." + (++a) + " times "
-                    + "with Loop-index :- " + i);
+            long id = Thread.currentThread().getId();
+            if (id == 21) {
+                System.out.println("t1 thread is running with id :- " + id + " and connt " + (++a) + " Even "
+                        + "with Loop-index :- " + i);
+            }
+            if (id == 22) {
+                System.out.println("t2 thread is running with id :- " + id + " and connt " + (++a) + " Odd "
+                        + "with Loop-index :- " + i);
+            }
+            if (id == 23) {
+                System.out.println("t3 thread is running with id :- " + id + " and connt " + (++a) + " Nutral"
+                        + " with Loop-index :- " + i);
+            }
         }
     }
 }
