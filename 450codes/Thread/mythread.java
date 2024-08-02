@@ -7,7 +7,7 @@ class myTread implements Runnable {
             long id = Thread.currentThread().getId();
             String name = Thread.currentThread().getName();
             if (id == 21) {
-                if (i % 2 ==0) {
+                if (i % 2 == 0) {
                     System.out
                             .println(name + " t1 thread is running with id :- " + id + " and connt " + (++a)
                                     + "with Even Numbers :- " + i);
