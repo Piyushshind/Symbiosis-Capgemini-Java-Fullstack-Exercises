@@ -15,7 +15,7 @@ public class sleep {
         T1.start();
 
         try {
-            T1.sleep(3000);
+            Thread.sleep(3000);
         } catch (Exception e) {
             System.out.println(e);
         }
