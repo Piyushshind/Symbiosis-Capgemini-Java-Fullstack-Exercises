@@ -12,7 +12,6 @@ public class mainthread {
         np.start();
         try {
             np.join();
-            // Thread.currentThread().join();
         } catch (Exception e) {
             System.out.println(e);
         }
