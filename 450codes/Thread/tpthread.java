@@ -7,6 +7,6 @@ class tpthread extends Thread {
         tpthread t = new tpthread();
         t.start();
         t.stop();
-        t.start();
+        t.start() ;
     }
 }
