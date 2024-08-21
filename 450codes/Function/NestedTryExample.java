@@ -13,7 +13,7 @@ public class NestedTryExample {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ArrayIndexOutOfBoundsException caught in outer try block: " + e.getMessage());
         } catch (Exception e) {
-            System.out.println("General exception caught in outer try block: " + e.getMessage());
+            System.out.println("General exception caught in outer try block: "  + e.getMessage());
         }
         
         System.out.println("Program continues...");
