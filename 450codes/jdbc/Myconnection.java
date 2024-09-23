@@ -21,8 +21,7 @@ public class MyConnection {
 
 		}catch(Exception e){
 			System.out.println("Exe " + e);
-		}
-		
+		}	
 	}
 	
 	
